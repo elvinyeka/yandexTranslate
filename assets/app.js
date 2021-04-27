@@ -8,10 +8,13 @@ function eventListeners() {
 
     document.querySelector('#language').onchange = function() {
         // Code Here
+        console.log('Event');
+        ui.changeUI();
     };
 }
 
 const translate = new Translate(document.querySelector('#word').value, document.querySelector('#language').value);
+const ui = new UI();
 
 function translateWord(e) {
     const word = document.querySelector('#word').value;
@@ -22,7 +25,9 @@ function translateWord(e) {
         if (err) {
             console.log(err);
         } else {
-            console.log(response);
+
+            ui.displayTranslate(response);
+
         }
     });
 
