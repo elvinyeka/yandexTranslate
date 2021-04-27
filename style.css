@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #f8f858;
+}
+
+.container {
+    width: 70%;
+    /* height: 500px; */
+    margin: 15px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(100, 85, 2, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    ;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 140px;
+    margin-left: 150px;
+}
+
+.title {
+    margin-left: 50px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #c8272f;
+}
+
+.form {
+    margin-left: 140px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field label {
+    font-size: 13px;
+    color: #9e9e9e;
+    padding-left: 10px;
+}
+
+.input-field input {
+    font-size: 16px;
+    width: 75%;
+    background-color: #EDEEF1;
+    border: none;
+    padding: 20px 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    color: #535E7D;
+    border-radius: 4px;
+}
+
+.input-field select {
+    font-size: 16px;
+    width: 75%;
+    background-color: #EDEEF1;
+    border: none;
+    padding: 20px 10px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    color: #535E7D;
+    border-radius: 4px;
+    outline: none;
+}
+
+.btn {
+    width: 75%;
+    margin-left: 10px;
+    padding: 20px 10px;
+    margin-bottom: 50px;
+    border: 2px solid #c8272f;
+    color: #c8272f;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #c8272f;
+    color: #fff;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    margin-left: 150px;
+}
+
+.card-title {
+    font-size: 30px;
+    padding-left: 15px;
+    color: #535E7D;
+}
+
+.card-content {
+    margin-left: 150px;
+    font-size: 30px;
+    padding: 40px 10px 40px;
+}

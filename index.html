@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Yandex Translate</title>
+</head>
+
+<body>
+
+    <main class="main">
+        <div class="container">
+            <div class="header">
+                <img class="logo" src="img/Yandex_Logo_2021.png" alt="logo">
+                <h1 class="title ">API - Translate APP</h1>
+            </div>
+            <form id="translate-form" class="form">
+                <div class="input-field">
+                    <label for="task">Tərcümə ediləcək söz</label>
+                    <input type="text" name="word" id="word" value="Necəsən">
+                </div>
+
+                <div class="input-field">
+                    <select id="language">                                                  
+                        <option value="en">İngiliscə</option>
+                        <option value="de">Almanca</option>     
+                        <option value="es">İspanca</option>
+                        <option value="ru">Rusca</option>
+                        <option value="tr">Türkcə</option>
+                    </select>
+                </div>
+                <input type="submit" value="Çevir" class="btn">
+            </form>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <img src="img/en.png" id="outputImage" height="50px" width="50px">
+                    <span class="card-title" id="outputLanguage">İngiliscə</span>
+                </div>
+                <div class="card-content">
+                    <h5>Tərcümə olunan söz: <span id="outputWord" style="color :red;"> How are you ?</span></h5>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
